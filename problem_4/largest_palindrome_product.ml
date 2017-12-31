@@ -10,7 +10,7 @@ let largest_product limit =
   for i = 1 to limit do
     for j = i to limit do
       let prod = i*j in
-      if (is_palindrome prod) && (prod > !current_max) then
+      if (prod > !current_max) && (is_palindrome prod) then
         current_max := prod
     done
   done;
