@@ -20,11 +20,11 @@ let nst_prime n =
     if (is_prime (!k)) then
       begin
         i := !i + 1;
-        k := !k + 1
+        k := !k + 2
       end
     else
-      k := !k + 1
+      k := !k + 2
   done;
-  !k-1;;
+  !k-2;;
 
 nst_prime 10001;;
